@@ -15,7 +15,7 @@ services:
       kratos-migrate:
         condition: service_started
     environment:
-      DSN: postgresql://william:5WJD_ATLXblhdUsR@free-tier6.gcp-asia-southeast1.cockroachlabs.cloud:26257/bnko?sslmode=verify-full&sslrootcert=/etc/config/kratos/dbcrt/root.crt&options=--cluster%3Dfrigid-gopher-819
+      DSN: cockroach sql --url "postgresql://username:password@free-tier6.gcp-asia-southeast1.cockroachlabs.cloud:26257/dbname?sslmode=verify-full&sslrootcert=/Users/huanlt/root.crt&options=--cluster%3Dfrigid-gopher-819"
       LOG_LEVEL: trace
     image: oryd/kratos:v0.6.3-alpha.1
     networks:
@@ -36,7 +36,7 @@ services:
   kratos-migrate:
     command: -c /etc/config/kratos/kratos.yml migrate sql -e --yes
     environment:
-      DSN: postgresql://william:5WJD_ATLXblhdUsR@free-tier6.gcp-asia-southeast1.cockroachlabs.cloud:26257/bnko?sslmode=verify-full&sslrootcert=/etc/config/kratos/dbcrt/root.crt&options=--cluster%3Dfrigid-gopher-819
+      DSN: cockroach sql --url "postgresql://username:password@free-tier6.gcp-asia-southeast1.cockroachlabs.cloud:26257/dbname?sslmode=verify-full&sslrootcert=/Users/huanlt/root.crt&options=--cluster%3Dfrigid-gopher-819"
     image: oryd/kratos:v0.6.3-alpha.1
     networks:
       intranet: {}
