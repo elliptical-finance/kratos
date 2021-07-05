@@ -46,10 +46,6 @@
         "productName" : {
           "title": "Product Name",
           "type": "string"
-        },
-        "phone" : {
-          "title": "Phone number",
-          "type": "string"
         }
       },
       "required": [
