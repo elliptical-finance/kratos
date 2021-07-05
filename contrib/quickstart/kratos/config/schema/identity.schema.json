@@ -1,5 +1,5 @@
 {
-  "$id": "https://schemas.ory.sh/presets/kratos/quickstart/email-password/identity.schema.json",
+  "$id": "https://schemas.ory.sh/presets/kratos/quickstart/schema/identity.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Person",
   "type": "object",
@@ -45,10 +45,6 @@
         },
         "productName" : {
           "title": "Product Name",
-          "type": "string"
-        },
-        "phone" : {
-          "title": "Phone number",
           "type": "string"
         }
       },

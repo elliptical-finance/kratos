@@ -73,6 +73,9 @@ hashers:
 
 identity:
   default_schema_url: file:///etc/config/kratos/schema/identity.schema.json
+  schemas:
+    - id: employee
+      url: file:///etc/config/kratos/schema/employee.schema.json
 
 courier:
   smtp:
