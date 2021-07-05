@@ -38,10 +38,27 @@
               "type": "string"
             }
           }
+        },
+        "productId" : {
+          "title": "Product Id",
+          "type": "number"
+        },
+        "productName" : {
+          "title": "Product Name",
+          "type": "string"
+        },
+        "phone" : {
+          "title": "Phone number",
+          "type": "string"
+        },
+        "role" : {
+          "title": "Role of user",
+          "type": "string"
         }
       },
       "required": [
-        "email"
+        "email",
+        "role"
       ],
       "additionalProperties": false
     }

@@ -17,7 +17,7 @@ services:
     environment:
       DSN: postgresql://william:5WJD_ATLXblhdUsR@free-tier6.gcp-asia-southeast1.cockroachlabs.cloud:26257/bnko?sslmode=verify-full&sslrootcert=/etc/config/kratos/dbcrt/root.crt&options=--cluster%3Dfrigid-gopher-819
       LOG_LEVEL: trace
-    image: oryd/kratos:v0.6.2-alpha.1
+    image: oryd/kratos:v0.6.3-alpha.1
     networks:
       intranet: {}
     ports:
@@ -37,7 +37,7 @@ services:
     command: -c /etc/config/kratos/kratos.yml migrate sql -e --yes
     environment:
       DSN: postgresql://william:5WJD_ATLXblhdUsR@free-tier6.gcp-asia-southeast1.cockroachlabs.cloud:26257/bnko?sslmode=verify-full&sslrootcert=/etc/config/kratos/dbcrt/root.crt&options=--cluster%3Dfrigid-gopher-819
-    image: oryd/kratos:v0.6.2-alpha.1
+    image: oryd/kratos:v0.6.3-alpha.1
     networks:
       intranet: {}
     restart: on-failure
