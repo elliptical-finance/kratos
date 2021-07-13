@@ -46,6 +46,10 @@
         "productName" : {
           "title": "Product Name",
           "type": "string"
+        },
+        "role" : {
+          "title": "Role of user",
+          "type": "string"
         }
       },
       "required": [
