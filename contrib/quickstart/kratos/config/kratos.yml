@@ -61,7 +61,7 @@ log:
 
 secrets:
   cookie:
-    - PLEASE-CHANGE-ME-I-AM-VERY-INSECURE
+    - ${JWT_SECRET_KEY}
 
 hashers:
   argon2:
